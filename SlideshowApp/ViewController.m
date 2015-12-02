@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+static const NSInteger kImageCounts = 4;
 @interface ViewController () {
     UIImageView *aImageView;
     NSInteger countNumber;
@@ -22,7 +23,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     countNumber = 0;
     [self setupBackground];
-    [self setupButton];
+    [self setupPrevButton];
+    [self setupNextButton];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,22 +38,45 @@
     [self.view addSubview:aImageView];
 }
 
--(void)setupButton{
+-(void)setupPrevButton{
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(0, 0, 120, 45);
-    button.center = CGPointMake(160, 450);
-    [button setTitle:@"Button" forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(changeImageUsingIf:)
+    button.center = CGPointMake(80, 450);
+    [button setTitle:@"Prev" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(changeImageToPrev:)
      forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
 }
 
--(void)changeImageUsingIf:(id)sender{
-    countNumber++;
-    aImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"flower%ld.png",(long)countNumber]];
-    if (countNumber==3) {
-        countNumber = 0;
-    }
+-(void)setupNextButton{
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(0, 0, 120, 45);
+    button.center = CGPointMake(240, 450);
+    [button setTitle:@"Next" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(changeImageToNext:)
+     forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
 }
+
+
+-(void)changeImageToPrev:(id)sender{
+    if (countNumber == 0) {
+        countNumber = kImageCounts -1;
+    } else {
+        countNumber--;
+    }
+    [self changeImage];
+}
+
+-(void)changeImageToNext:(id)sender{
+    countNumber++;
+    [self changeImage];
+}
+
+-(void)changeImage {
+    countNumber %= kImageCounts;
+    aImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"flower%ld.png",(long)countNumber]];
+}
+
 
 @end
