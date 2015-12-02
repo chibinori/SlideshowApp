@@ -13,6 +13,10 @@
 		9ACF9F3A1C0EA02D00D9FDA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF9F381C0EA02D00D9FDA3 /* Main.storyboard */; };
 		9ACF9F3C1C0EA02D00D9FDA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF9F3B1C0EA02D00D9FDA3 /* Assets.xcassets */; };
 		9ACF9F3F1C0EA02D00D9FDA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF9F3D1C0EA02D00D9FDA3 /* LaunchScreen.storyboard */; };
+		9ACF9F4A1C0EA96C00D9FDA3 /* flower0.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF9F461C0EA96C00D9FDA3 /* flower0.png */; };
+		9ACF9F4B1C0EA96C00D9FDA3 /* flower1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF9F471C0EA96C00D9FDA3 /* flower1.png */; };
+		9ACF9F4C1C0EA96C00D9FDA3 /* flower2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF9F481C0EA96C00D9FDA3 /* flower2.png */; };
+		9ACF9F4D1C0EA96C00D9FDA3 /* flower3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF9F491C0EA96C00D9FDA3 /* flower3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		9ACF9F3B1C0EA02D00D9FDA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9ACF9F3E1C0EA02D00D9FDA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9ACF9F401C0EA02D00D9FDA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ACF9F461C0EA96C00D9FDA3 /* flower0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower0.png; sourceTree = "<group>"; };
+		9ACF9F471C0EA96C00D9FDA3 /* flower1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower1.png; sourceTree = "<group>"; };
+		9ACF9F481C0EA96C00D9FDA3 /* flower2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower2.png; sourceTree = "<group>"; };
+		9ACF9F491C0EA96C00D9FDA3 /* flower3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,10 @@
 		9ACF9F2F1C0EA02D00D9FDA3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9ACF9F461C0EA96C00D9FDA3 /* flower0.png */,
+				9ACF9F471C0EA96C00D9FDA3 /* flower1.png */,
+				9ACF9F481C0EA96C00D9FDA3 /* flower2.png */,
+				9ACF9F491C0EA96C00D9FDA3 /* flower3.png */,
 				9ACF9F301C0EA02D00D9FDA3 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -137,7 +149,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9ACF9F3F1C0EA02D00D9FDA3 /* LaunchScreen.storyboard in Resources */,
+				9ACF9F4B1C0EA96C00D9FDA3 /* flower1.png in Resources */,
+				9ACF9F4A1C0EA96C00D9FDA3 /* flower0.png in Resources */,
+				9ACF9F4C1C0EA96C00D9FDA3 /* flower2.png in Resources */,
 				9ACF9F3C1C0EA02D00D9FDA3 /* Assets.xcassets in Resources */,
+				9ACF9F4D1C0EA96C00D9FDA3 /* flower3.png in Resources */,
 				9ACF9F3A1C0EA02D00D9FDA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
